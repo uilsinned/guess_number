@@ -4,7 +4,9 @@
 #猜錯的話 要告訴他 比答案大/小
 
 import random
-password = random.randint(1, 100)
+a = input('請決定最小值:')
+b = input('請決定最大值:')
+password = random.randint(int(a), int(b))
 n = 0 #猜的次數
 while True:
 	n = n + 1
