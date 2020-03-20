@@ -5,15 +5,16 @@
 
 import random
 password = random.randint(1, 100)
-n = 1 #猜的次數
+n = 0 #猜的次數
 while True:
+	n = n + 1
 	p = input('請猜數字')
 	if int(p) == password:
 		print('正確,總共花了', n, "次")
 		break
 	else:
-		n = n + 1
 		if int(p) > password:
 			print('太大囉')
 		else:
 			print('太小囉')
+		print('這是你猜的第', n, '次')
